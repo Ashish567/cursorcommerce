@@ -1,0 +1,101 @@
+name,description,price,images,category,stock
+"Sample Product 1","A great product",19.99,"[\"https://via.placeholder.com/150\"]","Electronics",50
+"Sample Product 2","Another great product",29.99,"[\"https://via.placeholder.com/150\"]","Books",30
+"Sample Product 3","Yet another product",9.99,"[\"https://via.placeholder.com/150\"]","Toys",100
+"Sample Product 4","A must-have item",49.99,"[\"https://via.placeholder.com/150\"]","Home",20
+"Sample Product 5","Top-rated gadget",99.99,"[\"https://via.placeholder.com/150\"]","Electronics",15
+"Sample Product 6","Fun for all ages",14.99,"[\"https://via.placeholder.com/150\"]","Toys",80
+"Sample Product 7","Bestselling book",24.99,"[\"https://via.placeholder.com/150\"]","Books",60
+"Sample Product 8","Stylish fashion",39.99,"[\"https://via.placeholder.com/150\"]","Fashion",40
+"Sample Product 9","Home essential",12.99,"[\"https://via.placeholder.com/150\"]","Home",70
+"Sample Product 10","Sports gear",59.99,"[\"https://via.placeholder.com/150\"]","Sports",25
+"Sample Product 11","A great product",19.99,"[\"https://via.placeholder.com/150\"]","Electronics",50
+"Sample Product 12","Another great product",29.99,"[\"https://via.placeholder.com/150\"]","Books",30
+"Sample Product 13","Yet another product",9.99,"[\"https://via.placeholder.com/150\"]","Toys",100
+"Sample Product 14","A must-have item",49.99,"[\"https://via.placeholder.com/150\"]","Home",20
+"Sample Product 15","Top-rated gadget",99.99,"[\"https://via.placeholder.com/150\"]","Electronics",15
+"Sample Product 16","Fun for all ages",14.99,"[\"https://via.placeholder.com/150\"]","Toys",80
+"Sample Product 17","Bestselling book",24.99,"[\"https://via.placeholder.com/150\"]","Books",60
+"Sample Product 18","Stylish fashion",39.99,"[\"https://via.placeholder.com/150\"]","Fashion",40
+"Sample Product 19","Home essential",12.99,"[\"https://via.placeholder.com/150\"]","Home",70
+"Sample Product 20","Sports gear",59.99,"[\"https://via.placeholder.com/150\"]","Sports",25
+"Sample Product 21","A great product",19.99,"[\"https://via.placeholder.com/150\"]","Electronics",50
+"Sample Product 22","Another great product",29.99,"[\"https://via.placeholder.com/150\"]","Books",30
+"Sample Product 23","Yet another product",9.99,"[\"https://via.placeholder.com/150\"]","Toys",100
+"Sample Product 24","A must-have item",49.99,"[\"https://via.placeholder.com/150\"]","Home",20
+"Sample Product 25","Top-rated gadget",99.99,"[\"https://via.placeholder.com/150\"]","Electronics",15
+"Sample Product 26","Fun for all ages",14.99,"[\"https://via.placeholder.com/150\"]","Toys",80
+"Sample Product 27","Bestselling book",24.99,"[\"https://via.placeholder.com/150\"]","Books",60
+"Sample Product 28","Stylish fashion",39.99,"[\"https://via.placeholder.com/150\"]","Fashion",40
+"Sample Product 29","Home essential",12.99,"[\"https://via.placeholder.com/150\"]","Home",70
+"Sample Product 30","Sports gear",59.99,"[\"https://via.placeholder.com/150\"]","Sports",25
+"Sample Product 31","A great product",19.99,"[\"https://via.placeholder.com/150\"]","Electronics",50
+"Sample Product 32","Another great product",29.99,"[\"https://via.placeholder.com/150\"]","Books",30
+"Sample Product 33","Yet another product",9.99,"[\"https://via.placeholder.com/150\"]","Toys",100
+"Sample Product 34","A must-have item",49.99,"[\"https://via.placeholder.com/150\"]","Home",20
+"Sample Product 35","Top-rated gadget",99.99,"[\"https://via.placeholder.com/150\"]","Electronics",15
+"Sample Product 36","Fun for all ages",14.99,"[\"https://via.placeholder.com/150\"]","Toys",80
+"Sample Product 37","Bestselling book",24.99,"[\"https://via.placeholder.com/150\"]","Books",60
+"Sample Product 38","Stylish fashion",39.99,"[\"https://via.placeholder.com/150\"]","Fashion",40
+"Sample Product 39","Home essential",12.99,"[\"https://via.placeholder.com/150\"]","Home",70
+"Sample Product 40","Sports gear",59.99,"[\"https://via.placeholder.com/150\"]","Sports",25
+"Sample Product 41","A great product",19.99,"[\"https://via.placeholder.com/150\"]","Electronics",50
+"Sample Product 42","Another great product",29.99,"[\"https://via.placeholder.com/150\"]","Books",30
+"Sample Product 43","Yet another product",9.99,"[\"https://via.placeholder.com/150\"]","Toys",100
+"Sample Product 44","A must-have item",49.99,"[\"https://via.placeholder.com/150\"]","Home",20
+"Sample Product 45","Top-rated gadget",99.99,"[\"https://via.placeholder.com/150\"]","Electronics",15
+"Sample Product 46","Fun for all ages",14.99,"[\"https://via.placeholder.com/150\"]","Toys",80
+"Sample Product 47","Bestselling book",24.99,"[\"https://via.placeholder.com/150\"]","Books",60
+"Sample Product 48","Stylish fashion",39.99,"[\"https://via.placeholder.com/150\"]","Fashion",40
+"Sample Product 49","Home essential",12.99,"[\"https://via.placeholder.com/150\"]","Home",70
+"Sample Product 50","Sports gear",59.99,"[\"https://via.placeholder.com/150\"]","Sports",25
+"Sample Product 51","A great product",19.99,"[\"https://via.placeholder.com/150\"]","Electronics",50
+"Sample Product 52","Another great product",29.99,"[\"https://via.placeholder.com/150\"]","Books",30
+"Sample Product 53","Yet another product",9.99,"[\"https://via.placeholder.com/150\"]","Toys",100
+"Sample Product 54","A must-have item",49.99,"[\"https://via.placeholder.com/150\"]","Home",20
+"Sample Product 55","Top-rated gadget",99.99,"[\"https://via.placeholder.com/150\"]","Electronics",15
+"Sample Product 56","Fun for all ages",14.99,"[\"https://via.placeholder.com/150\"]","Toys",80
+"Sample Product 57","Bestselling book",24.99,"[\"https://via.placeholder.com/150\"]","Books",60
+"Sample Product 58","Stylish fashion",39.99,"[\"https://via.placeholder.com/150\"]","Fashion",40
+"Sample Product 59","Home essential",12.99,"[\"https://via.placeholder.com/150\"]","Home",70
+"Sample Product 60","Sports gear",59.99,"[\"https://via.placeholder.com/150\"]","Sports",25
+"Sample Product 61","A great product",19.99,"[\"https://via.placeholder.com/150\"]","Electronics",50
+"Sample Product 62","Another great product",29.99,"[\"https://via.placeholder.com/150\"]","Books",30
+"Sample Product 63","Yet another product",9.99,"[\"https://via.placeholder.com/150\"]","Toys",100
+"Sample Product 64","A must-have item",49.99,"[\"https://via.placeholder.com/150\"]","Home",20
+"Sample Product 65","Top-rated gadget",99.99,"[\"https://via.placeholder.com/150\"]","Electronics",15
+"Sample Product 66","Fun for all ages",14.99,"[\"https://via.placeholder.com/150\"]","Toys",80
+"Sample Product 67","Bestselling book",24.99,"[\"https://via.placeholder.com/150\"]","Books",60
+"Sample Product 68","Stylish fashion",39.99,"[\"https://via.placeholder.com/150\"]","Fashion",40
+"Sample Product 69","Home essential",12.99,"[\"https://via.placeholder.com/150\"]","Home",70
+"Sample Product 70","Sports gear",59.99,"[\"https://via.placeholder.com/150\"]","Sports",25
+"Sample Product 71","A great product",19.99,"[\"https://via.placeholder.com/150\"]","Electronics",50
+"Sample Product 72","Another great product",29.99,"[\"https://via.placeholder.com/150\"]","Books",30
+"Sample Product 73","Yet another product",9.99,"[\"https://via.placeholder.com/150\"]","Toys",100
+"Sample Product 74","A must-have item",49.99,"[\"https://via.placeholder.com/150\"]","Home",20
+"Sample Product 75","Top-rated gadget",99.99,"[\"https://via.placeholder.com/150\"]","Electronics",15
+"Sample Product 76","Fun for all ages",14.99,"[\"https://via.placeholder.com/150\"]","Toys",80
+"Sample Product 77","Bestselling book",24.99,"[\"https://via.placeholder.com/150\"]","Books",60
+"Sample Product 78","Stylish fashion",39.99,"[\"https://via.placeholder.com/150\"]","Fashion",40
+"Sample Product 79","Home essential",12.99,"[\"https://via.placeholder.com/150\"]","Home",70
+"Sample Product 80","Sports gear",59.99,"[\"https://via.placeholder.com/150\"]","Sports",25
+"Sample Product 81","A great product",19.99,"[\"https://via.placeholder.com/150\"]","Electronics",50
+"Sample Product 82","Another great product",29.99,"[\"https://via.placeholder.com/150\"]","Books",30
+"Sample Product 83","Yet another product",9.99,"[\"https://via.placeholder.com/150\"]","Toys",100
+"Sample Product 84","A must-have item",49.99,"[\"https://via.placeholder.com/150\"]","Home",20
+"Sample Product 85","Top-rated gadget",99.99,"[\"https://via.placeholder.com/150\"]","Electronics",15
+"Sample Product 86","Fun for all ages",14.99,"[\"https://via.placeholder.com/150\"]","Toys",80
+"Sample Product 87","Bestselling book",24.99,"[\"https://via.placeholder.com/150\"]","Books",60
+"Sample Product 88","Stylish fashion",39.99,"[\"https://via.placeholder.com/150\"]","Fashion",40
+"Sample Product 89","Home essential",12.99,"[\"https://via.placeholder.com/150\"]","Home",70
+"Sample Product 90","Sports gear",59.99,"[\"https://via.placeholder.com/150\"]","Sports",25
+"Sample Product 91","A great product",19.99,"[\"https://via.placeholder.com/150\"]","Electronics",50
+"Sample Product 92","Another great product",29.99,"[\"https://via.placeholder.com/150\"]","Books",30
+"Sample Product 93","Yet another product",9.99,"[\"https://via.placeholder.com/150\"]","Toys",100
+"Sample Product 94","A must-have item",49.99,"[\"https://via.placeholder.com/150\"]","Home",20
+"Sample Product 95","Top-rated gadget",99.99,"[\"https://via.placeholder.com/150\"]","Electronics",15
+"Sample Product 96","Fun for all ages",14.99,"[\"https://via.placeholder.com/150\"]","Toys",80
+"Sample Product 97","Bestselling book",24.99,"[\"https://via.placeholder.com/150\"]","Books",60
+"Sample Product 98","Stylish fashion",39.99,"[\"https://via.placeholder.com/150\"]","Fashion",40
+"Sample Product 99","Home essential",12.99,"[\"https://via.placeholder.com/150\"]","Home",70
+"Sample Product 100","Sports gear",59.99,"[\"https://via.placeholder.com/150\"]","Sports",25 
