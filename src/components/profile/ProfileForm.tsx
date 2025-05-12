@@ -55,51 +55,51 @@ export function ProfileForm({ user }: ProfileFormProps) {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow p-6">
-      <h2 className="text-xl font-semibold mb-4">Profile Information</h2>
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-        <div>
-          <label
-            htmlFor="name"
-            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-          >
-            Name
-          </label>
-          <input
-            {...register("name")}
-            type="text"
-            className="mt-2 flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-          />
-          {errors.name && (
-            <p className="mt-1 text-sm text-red-500">{errors.name.message}</p>
-          )}
+    <div className="container py-5">
+      <div className="row justify-content-center">
+        <div className="col-lg-7 mb-4">
+          <div className="card shadow-sm">
+            <div className="card-body p-4">
+              <h2 className="card-title mb-4 text-center fw-bold">Profile Information</h2>
+              <form onSubmit={handleSubmit(onSubmit)}>
+                <div className="mb-3">
+                  <label htmlFor="name" className="form-label fw-semibold">Name</label>
+                  <input
+                    {...register("name")}
+                    type="text"
+                    className={`form-control${errors.name ? " is-invalid" : ""}`}
+                    id="name"
+                    placeholder="Enter your name"
+                  />
+                  {errors.name && (
+                    <div className="invalid-feedback">{errors.name.message}</div>
+                  )}
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="email" className="form-label fw-semibold">Email</label>
+                  <input
+                    {...register("email")}
+                    type="email"
+                    className={`form-control${errors.email ? " is-invalid" : ""}`}
+                    id="email"
+                    placeholder="Enter your email"
+                  />
+                  {errors.email && (
+                    <div className="invalid-feedback">{errors.email.message}</div>
+                  )}
+                </div>
+                <button
+                  type="submit"
+                  disabled={isLoading}
+                  className="btn btn-warning w-100 fw-semibold mt-3 shadow-sm"
+                >
+                  {isLoading ? "Saving..." : "Save Changes"}
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
-
-        <div>
-          <label
-            htmlFor="email"
-            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-          >
-            Email
-          </label>
-          <input
-            {...register("email")}
-            type="email"
-            className="mt-2 flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-          />
-          {errors.email && (
-            <p className="mt-1 text-sm text-red-500">{errors.email.message}</p>
-          )}
-        </div>
-
-        <button
-          type="submit"
-          disabled={isLoading}
-          className="inline-flex w-full items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
-        >
-          {isLoading ? "Saving..." : "Save Changes"}
-        </button>
-      </form>
+      </div>
     </div>
   );
 } 

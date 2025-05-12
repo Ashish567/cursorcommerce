@@ -41,13 +41,13 @@ export default async function ProfilePage() {
   }
 
   return (
-    <div className="container mx-auto py-8">
-      <h1 className="text-3xl font-bold mb-8">Profile</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
+    <div className="container py-5">
+      <h1 className="mb-5 fw-bold display-5 text-center">Profile</h1>
+      <div className="row justify-content-center">
+        <div className="col-lg-7 mb-4">
           <ProfileForm user={user} />
         </div>
-        <div>
+        <div className="col-lg-7 mb-4">
           <OrderHistory orders={user.orders} />
         </div>
       </div>
