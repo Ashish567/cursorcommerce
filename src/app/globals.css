@@ -2,6 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
+/* === Custom Red Theme and Contrast Enhancements === */
+:root {
+  --bs-primary: #e53935;
+  --bs-primary-rgb: 229,57,53;
+  --bs-danger: #b71c1c;
+  --bs-success: #43a047;
+  --bs-bg: #fff;
+  --bs-text: #212529;
+}
+
+[data-theme="dark"], .dark {
+  --bs-bg: #18191a;
+  --bs-text: #f5f5f5;
+  --bs-primary: #ff5252;
+  --bs-primary-rgb: 255,82,82;
+  --bs-danger: #ff1744;
+}
+
+body {
+  background-color: var(--bs-bg) !important;
+  color: var(--bs-text) !important;
+}
+
+.btn-primary, .btn-warning {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+  color: #fff !important;
+}
+
+.btn-primary:hover, .btn-warning:hover {
+  background-color: var(--bs-danger) !important;
+  border-color: var(--bs-danger) !important;
+}
+
+.card {
+  border: 1px solid var(--bs-primary);
+  box-shadow: 0 2px 8px rgba(var(--bs-primary-rgb), 0.08);
+}
+
+a, .text-primary {
+  color: var(--bs-primary) !important;
+}
+
+[data-theme="dark"] .card, .dark .card {
+  background: #232526;
+  border-color: var(--bs-primary);
+}
+
+/* === End Custom Red Theme === */
+
 @layer base {
   :root {
     --background: 0 0% 100%;
