@@ -2,33 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-/* === Custom Red Theme and Contrast Enhancements === */
+/* === Discord-inspired Theme Colors === */
 :root {
-  --bs-primary: #e53935;
-  --bs-primary-rgb: 229,57,53;
-  --bs-danger: #b71c1c;
-  --bs-success: #43a047;
-  --bs-bg: #fff;
-  --bs-text: #212529;
+  --bs-primary: #5865f2;  /* Discord blurple */
+  --bs-primary-rgb: 88, 101, 242;
+  --bs-danger: #ed4245;   /* Discord red */
+  --bs-success: #57f287;  /* Discord green */
+  --bs-bg: #ffffff;
+  --bs-text: #2e3338;
 }
 
 [data-theme="dark"], .dark {
-  --bs-bg: #18191a;
-  --bs-text: #f5f5f5;
-  --bs-primary: #ff5252;
-  --bs-primary-rgb: 255,82,82;
-  --bs-danger: #ff1744;
+  --bs-bg: #36393f;
+  --bs-text: #dcddde;
+  --bs-primary: #5865f2;
+  --bs-primary-rgb: 88, 101, 242;
+  --bs-danger: #ed4245;
 }
 
 body {
   background-color: var(--bs-bg) !important;
   color: var(--bs-text) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-primary, .btn-warning {
   background-color: var(--bs-primary) !important;
   border-color: var(--bs-primary) !important;
   color: #fff !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .btn-primary:hover, .btn-warning:hover {
@@ -39,15 +41,17 @@ body {
 .card {
   border: 1px solid var(--bs-primary);
   box-shadow: 0 2px 8px rgba(var(--bs-primary-rgb), 0.08);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 a, .text-primary {
   color: var(--bs-primary) !important;
+  transition: color 0.3s ease;
 }
 
 [data-theme="dark"] .card, .dark .card {
-  background: #232526;
-  border-color: var(--bs-primary);
+  background: #2f3136;
+  border-color: #202225;
 }
 
 /* === End Custom Red Theme === */
@@ -55,16 +59,16 @@ a, .text-primary {
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 220 13% 18%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 13% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 13% 18%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 235 86% 65%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -80,23 +84,23 @@ a, .text-primary {
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 235 86% 65%;
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 220 13% 18%;
+    --foreground: 220 13% 91%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 13% 18%;
+    --card-foreground: 220 13% 91%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 13% 18%;
+    --popover-foreground: 220 13% 91%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 235 86% 65%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -112,7 +116,7 @@ a, .text-primary {
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --ring: 235 86% 65%;
   }
 }
 
@@ -127,23 +131,27 @@ a, .text-primary {
 
 /* Custom dark mode for Bootstrap and general elements */
 .dark body {
-  background-color: #181a1b !important;
-  color: #f8f9fa !important;
+  background-color: #36393f !important;
+  color: #dcddde !important;
 }
+
 .dark .card {
-  background-color: #23272b !important;
-  color: #f8f9fa !important;
+  background-color: #2f3136 !important;
+  color: #dcddde !important;
 }
+
 .dark .navbar, .dark .bg-white {
-  background-color: #23272b !important;
-  color: #f8f9fa !important;
+  background-color: #2f3136 !important;
+  color: #dcddde !important;
 }
+
 .dark .form-control, .dark .form-select {
-  background-color: #23272b !important;
-  color: #f8f9fa !important;
-  border-color: #495057 !important;
+  background-color: #2f3136 !important;
+  color: #dcddde !important;
+  border-color: #202225 !important;
 }
+
 .dark .btn-warning {
-  background-color: #ffc107 !important;
-  color: #23272b !important;
+  background-color: #faa61a !important;
+  color: #36393f !important;
 }

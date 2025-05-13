@@ -40,27 +40,27 @@ export function ProductCard({ product }: ProductCardProps) {
   }
 
   return (
-    <div className="card shadow-sm border-0 flex-fill h-100">
-      <Link href={`/products/${product.id}`} className="text-decoration-none text-dark">
+    <div className="card shadow-sm border-border bg-card flex-fill h-100 hover:shadow-md transition-shadow">
+      <Link href={`/products/${product.id}`} className="text-decoration-none">
         <div className="d-flex justify-content-center align-items-center pt-4">
           <Image
             src={imageUrl}
             alt={product.name}
             width={160}
             height={160}
-            className="card-img-top object-contain rounded-3 bg-white"
+            className="card-img-top object-contain rounded-3 bg-background"
             style={{ maxHeight: 160, width: 'auto', height: 'auto' }}
             priority={false}
           />
         </div>
         <div className="card-body text-center">
-          <h5 className="card-title fw-semibold mb-2" style={{ minHeight: 48 }}>{product.name}</h5>
+          <h5 className="card-title fw-semibold mb-2 text-foreground" style={{ minHeight: 48 }}>{product.name}</h5>
           <div className="d-flex justify-content-center align-items-center gap-1 mb-2">
-            <Star className="text-warning" size={16} fill="#ffc107" />
-            <span className="small fw-medium text-secondary">{rating}</span>
-            <span className="small text-muted">({reviews})</span>
+            <Star className="text-primary" size={16} fill="currentColor" />
+            <span className="small fw-medium text-muted-foreground">{rating}</span>
+            <span className="small text-muted-foreground">({reviews})</span>
           </div>
-          <div className="h5 fw-bold text-dark mb-3">{formatPrice(product.price)}</div>
+          <div className="h5 fw-bold text-foreground mb-3">{formatPrice(product.price)}</div>
         </div>
       </Link>
       <div className="card-footer bg-transparent border-0 pb-4 px-4">
@@ -71,7 +71,7 @@ export function ProductCard({ product }: ProductCardProps) {
             price: product.price,
             image: imageUrl,
           })}
-          className="btn btn-warning w-100 fw-semibold shadow-sm"
+          className="btn btn-primary w-100 fw-semibold shadow-sm hover:opacity-90 transition-opacity"
         >
           Add to Cart
         </button>

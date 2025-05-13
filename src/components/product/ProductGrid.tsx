@@ -7,7 +7,7 @@ interface ProductGridProps {
 
 export function ProductGrid({ products }: ProductGridProps) {
   if (!products || products.length === 0) {
-    return <div className="text-center text-secondary py-5">No products found.</div>;
+    return <div className="text-center text-muted-foreground py-5">No products found.</div>;
   }
 
   return (

@@ -42,10 +42,14 @@ export default async function ProductsPage({
 
   return (
     <div className="container py-5">
-      <h1 className="display-5 fw-bold mb-4">Products</h1>
+      <h1 className="display-5 fw-bold mb-4 text-foreground">Products</h1>
       <div className="row g-4">
         <div className="col-md-3">
-          <ProductFilters categories={categories.map((cat: { category: string }) => cat.category)} />
+          <div className="card border-border bg-card">
+            <div className="card-body">
+              <ProductFilters categories={categories.map((cat: { category: string }) => cat.category)} />
+            </div>
+          </div>
         </div>
         <div className="col-md-9">
           <ProductGrid products={products} />

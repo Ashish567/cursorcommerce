@@ -3,27 +3,22 @@
 import { useEffect } from 'react';
 import { useTheme } from 'next-themes';
 
-const DARKLY_CSS = 'https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/darkly/bootstrap.min.css';
-
 export function BootstrapDarkMode() {
-  const { theme } = useTheme();
+  const { theme, resolvedTheme } = useTheme();
 
   useEffect(() => {
-    let link: HTMLLinkElement | null = document.getElementById('bootswatch-darkly') as HTMLLinkElement;
-    if (theme === 'dark') {
-      if (!link) {
-        link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.id = 'bootswatch-darkly';
-        link.href = DARKLY_CSS;
-        document.head.appendChild(link);
-      }
+    const root = document.documentElement;
+    
+    if (resolvedTheme === 'dark') {
+      root.classList.add('dark');
+      root.setAttribute('data-theme', 'dark');
+      document.body.classList.add('dark');
     } else {
-      if (link) {
-        link.parentNode?.removeChild(link);
-      }
+      root.classList.remove('dark');
+      root.setAttribute('data-theme', 'light');
+      document.body.classList.remove('dark');
     }
-  }, [theme]);
+  }, [resolvedTheme]);
 
   return null;
 } 

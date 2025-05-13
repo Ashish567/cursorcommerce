@@ -10,13 +10,17 @@ export const metadata: Metadata = {
 export default function CartPage() {
   return (
     <div className="container py-5">
-      <h1 className="mb-4 display-6 fw-bold">Shopping Cart</h1>
+      <h1 className="mb-4 display-6 fw-bold text-foreground">Shopping Cart</h1>
       <div className="row g-4">
         <div className="col-lg-8">
-          <CartItems />
+          <div className="card border-border bg-card">
+            <CartItems />
+          </div>
         </div>
         <div className="col-lg-4">
-          <CartSummary />
+          <div className="card border-border bg-card">
+            <CartSummary />
+          </div>
         </div>
       </div>
     </div>

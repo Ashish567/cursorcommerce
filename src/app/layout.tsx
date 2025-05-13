@@ -23,14 +23,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className + " bg-white text-black min-h-screen"}>
+      <body className={inter.className}>
         {/* <ForceLightTheme /> */}
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem={true}
+          disableTransitionOnChange={false}
+          storageKey="theme"
+        >
           <BootstrapDarkMode />
           <AuthProvider>
-            <div className="relative flex min-h-screen flex-col bg-white">
+            <div className="relative flex min-h-screen flex-col">
               <Header />
-              <main className="flex-1 container mx-auto px-4 py-8 bg-white">{children}</main>
+              <main className="flex-1 container mx-auto px-4 py-8">{children}</main>
               <ThemeToggle />
             </div>
           </AuthProvider>

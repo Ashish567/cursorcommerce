@@ -34,9 +34,9 @@ export function ProductFilters({ categories }: ProductFiltersProps) {
   }, [debouncedSearch, category, router, searchParams]);
 
   return (
-    <form className="card p-3 shadow-sm mb-4">
+    <form className="p-3">
       <div className="mb-3">
-        <label htmlFor="search" className="form-label fw-medium">
+        <label htmlFor="search" className="form-label fw-medium text-foreground">
           Search
         </label>
         <input
@@ -45,18 +45,18 @@ export function ProductFilters({ categories }: ProductFiltersProps) {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Search products..."
-          className="form-control"
+          className="form-control bg-background text-foreground border-border focus:border-primary focus:ring-primary"
         />
       </div>
       <div className="mb-2">
-        <label htmlFor="category" className="form-label fw-medium">
+        <label htmlFor="category" className="form-label fw-medium text-foreground">
           Category
         </label>
         <select
           id="category"
           value={category}
           onChange={(e) => setCategory(e.target.value)}
-          className="form-select"
+          className="form-select bg-background text-foreground border-border focus:border-primary focus:ring-primary"
         >
           <option value="">All Categories</option>
           {categories.map((cat) => (

@@ -24,11 +24,11 @@ export function Header() {
 
   return (
     <>
-      {/* Bootstrap Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+      {/* Main Navbar */}
+      <nav className="navbar navbar-expand-lg sticky-top border-b border-border">
         <div className="container-fluid">
           {/* Logo */}
-          <Link href="/" className="navbar-brand fw-bold text-warning fs-3">
+          <Link href="/" className="navbar-brand fw-bold text-primary fs-3">
             E-Commerce
           </Link>
 
@@ -36,12 +36,12 @@ export function Header() {
           <form className="d-flex mx-auto w-50" onSubmit={e => { e.preventDefault(); window.location.href = `/products?search=${encodeURIComponent(search)}`; }}>
             <input
               type="text"
-              className="form-control me-2"
+              className="form-control me-2 bg-background text-foreground border-border"
               placeholder="Search products..."
               value={search}
               onChange={e => setSearch(e.target.value)}
             />
-            <button className="btn btn-warning text-white fw-semibold" type="submit">
+            <button className="btn btn-primary text-white fw-semibold" type="submit">
               Search
             </button>
           </form>
@@ -49,20 +49,20 @@ export function Header() {
           {/* Cart & Profile/Login */}
           <div className="d-flex align-items-center gap-3 ms-auto">
             <Link href="/cart" className="position-relative btn btn-link p-0">
-              <ShoppingCart className="h-6 w-6 text-dark" />
+              <ShoppingCart className="h-6 w-6 text-foreground" />
               {cartCount > 0 && (
-                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-white">
+                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary text-white">
                   {cartCount}
                 </span>
               )}
             </Link>
             {session ? (
               <Link href="/profile" className="d-flex align-items-center gap-2 btn btn-link p-0">
-                <User className="h-6 w-6 text-dark" />
-                <span className="fw-medium text-dark">{session.user.name}</span>
+                <User className="h-6 w-6 text-foreground" />
+                <span className="fw-medium text-foreground">{session.user.name}</span>
               </Link>
             ) : (
-              <Link href="/login" className="btn btn-outline-warning fw-medium">
+              <Link href="/login" className="btn btn-primary fw-medium">
                 Login
               </Link>
             )}
@@ -70,13 +70,13 @@ export function Header() {
         </div>
       </nav>
       {/* Category Bar */}
-      <nav className="bg-warning bg-opacity-10 border-top border-bottom border-warning py-2">
+      <nav className="bg-secondary/10 border-b border-border py-2">
         <div className="container d-flex gap-4 overflow-auto">
           {categories.map((cat) => (
             <Link
               key={cat}
               href={`/products?category=${encodeURIComponent(cat)}`}
-              className="text-dark text-decoration-none fw-medium px-2 py-1 rounded hover-bg-warning"
+              className="text-foreground text-decoration-none fw-medium px-2 py-1 rounded hover:bg-primary/10 transition-colors"
               style={{ whiteSpace: 'nowrap' }}
             >
               {cat}
